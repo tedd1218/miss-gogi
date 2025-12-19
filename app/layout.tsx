@@ -26,6 +26,10 @@ export const metadata: Metadata = {
   title: 'Miss Gogi Korean BBQ | Premium Korean BBQ in Doraville, GA',
   description: 'Experience authentic Korean BBQ with premium galbi, prime short rib, and all-you-can-eat options in Doraville, GA. Reserve your table today!',
   keywords: 'Korean BBQ, Miss Gogi, Doraville, Georgia, Korean restaurant, KBBQ, all you can eat, premium BBQ',
+  icons: {
+    icon: '/images/miss-gogi-logo.svg',
+    apple: '/images/miss-gogi-logo.svg',
+  },
 }
 
 export default function RootLayout({

@@ -86,7 +86,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-smoke-200 hover:text-ember-500 transition-colors duration-200 font-display text-lg"
+                className="text-smoke-200 hover:text-ember-500 transition-colors font-medium duration-200 text-lg"
               >
                 {link.label}
               </Link>
@@ -132,7 +132,7 @@ export default function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-smoke-200 hover:text-ember-500 transition-colors font-display text-lg py-2"
+                  className="text-smoke-200 hover:text-ember-500 transition-colors text-lg py-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {link.label}
