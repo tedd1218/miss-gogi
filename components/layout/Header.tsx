@@ -75,7 +75,7 @@ export default function Header() {
     <header
       ref={headerRef}
       className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
-        barReachedHeader ? 'bg-black' : 'bg-transparent'
+        barReachedHeader ? 'bg-black' : 'bg-black lg:bg-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -132,22 +132,15 @@ export default function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-smoke-200 hover:text-ember-500 transition-colors text-lg py-2"
+                  className="text-smoke-200 hover:text-ember-500 transition-colors text-lg py-1"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {link.label}
                 </Link>
               ))}
               <div className="flex flex-col space-y-3 pt-4">
-                <Link
-                  href="#reservations"
-                  className="px-6 py-3 bg-ember-600 text-white font-semibold rounded-lg text-center"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Reserve Table
-                </Link>
                 <button
-                  className="px-6 py-3 border-2 border-ember-600 text-ember-600 font-semibold rounded-lg text-center"
+                  className="px-6 py-3 bg-ember-600 text-white font-display font-semibold rounded-lg text-center"
                   onClick={() => {
                     setIsMobileMenuOpen(false)
                     setIsOrderModalOpen(true)
