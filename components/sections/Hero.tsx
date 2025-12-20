@@ -102,13 +102,15 @@ export default function Hero() {
     <div ref={containerRef} className="relative h-[300vh]" data-hero-section>
       <div className="sticky top-0 h-screen flex items-center justify-center overflow-hidden">
         {/* Background Image */}
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0" style={{ backgroundColor: '#2a2520' }}>
           <Image
-            src="/images/pork-belly-filter.png"
+            src="/images/pork-belly-filter-compressed.png"
             alt="Cooking pork belly"
             fill
             className="object-cover"
             quality={90}
+            priority
+            sizes="100vw"
           />
           
           {/* Subtle overlay */}
@@ -124,9 +126,9 @@ export default function Hero() {
         {/* Content */}
         <div className="relative z-10 text-center px-4 max-w-6xl mx-auto">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
           >
             {/* Text container with color reveal effect */}
             <div ref={titleRef} className="relative">
