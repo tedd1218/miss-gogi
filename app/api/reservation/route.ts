@@ -104,8 +104,8 @@ Please contact the customer to confirm the reservation.
   <style>
     body { font-family: Georgia, serif; color: #2d2a26; line-height: 1.6; }
     .container { max-width: 600px; margin: 0 auto; padding: 20px; }
-    .header { text-align: center; padding: 20px 0; border-bottom: 2px solid #f68634; }
-    .header img { max-width: 250px; height: auto; }
+    .header { text-align: center; padding: 30px 0; }
+    .header img { max-width: 500px; width: 100%; height: auto; }
     .content { padding: 30px 0; }
     .details { background: #f5ede4; padding: 20px; border-radius: 8px; margin: 20px 0; }
     .details p { margin: 8px 0; }
