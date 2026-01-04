@@ -1,10 +1,10 @@
-<svg width="158" height="158" viewBox="0 0 158 158" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="2" y="2" width="154" height="154" fill="#F68634" stroke="white" stroke-width="4"/>
-<rect x="13.6666" y="51.3334" width="65.3333" height="7.33333" fill="white"/>
-<rect x="79" y="51.3334" width="8" height="30" fill="white"/>
-<rect x="79" y="81.3334" width="39.6667" height="8" fill="white"/>
-<rect x="110.333" y="89.3334" width="8.33333" height="37.6667" fill="white"/>
-<rect x="11.3334" y="106" width="77.6667" height="7.66667" fill="white"/>
-<rect x="140.333" y="78" width="8" height="68.6667" fill="white"/>
-<circle cx="48.1667" cy="95.5" r="5.16667" fill="white"/>
+<svg width="91" height="91" viewBox="0 0 91 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="91.0001" height="91.0001" fill="#F68634"/>
+<rect x="5.8645" y="28.7156" width="39.6356" height="4.44889" fill="white"/>
+<rect x="45.5" y="28.7156" width="4.85334" height="18.2" fill="white"/>
+<rect x="45.5" y="46.9156" width="24.0645" height="4.85334" fill="white"/>
+<rect x="64.509" y="51.7689" width="5.05556" height="22.8511" fill="white"/>
+<rect x="4.44897" y="61.8801" width="47.1178" height="4.65112" fill="white"/>
+<rect x="82.709" y="44.8934" width="4.85334" height="41.6578" fill="white"/>
+<circle cx="26.7945" cy="55.5101" r="3.13445" fill="white"/>
 </svg>

@@ -25,8 +25,8 @@ export default function MenuPage() {
             </h1>
           </motion.div>
 
-          {/* Two Column Layout */}
-          <div className="grid md:grid-cols-2 gap-16 max-w-4xl mx-auto">
+          {/* Three Column Layout */}
+          <div className="grid md:grid-cols-3 gap-12 max-w-5xl mx-auto">
             {/* Food Menu Column */}
             <motion.div
               className="flex flex-col items-center text-center"
@@ -43,9 +43,31 @@ export default function MenuPage() {
                 href="/foodmenu.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group px-8 py-4 bg-ember-600 hover:bg-ember-700 text-white text-xl transition-all font-display duration-300 hover:shadow-2xl hover:shadow-ember-600/50 hover:scale-105"
+                className="group px-6 py-4 bg-ember-600 hover:bg-ember-700 text-white text-lg transition-all font-display duration-300 hover:shadow-2xl hover:shadow-ember-600/50 hover:scale-105"
               >
                 View Food Menu
+              </a>
+            </motion.div>
+
+            {/* AYCE Menu Column */}
+            <motion.div
+              className="flex flex-col items-center text-center"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.25 }}
+            >
+              <img 
+                src="/images/bbq-grill-stroke-rounded.svg" 
+                alt="AYCE Menu" 
+                className="w-20 h-20 mb-6"
+              />
+              <a 
+                href="/aycemenu.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group px-6 py-4 bg-ember-600 hover:bg-ember-700 text-white text-lg transition-all font-display duration-300 hover:shadow-2xl hover:shadow-ember-600/50 hover:scale-105"
+              >
+                View AYCE Menu
               </a>
             </motion.div>
 
@@ -62,8 +84,10 @@ export default function MenuPage() {
                 className="w-20 h-20 mb-6"
               />
               <a 
-                href="#" 
-                className="group px-8 py-4 bg-ember-600 hover:bg-ember-700 text-white text-xl transition-all font-display duration-300 hover:shadow-2xl hover:shadow-ember-600/50 hover:scale-105"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="/drinkmenu.pdf" 
+                className="group px-6 py-4 bg-ember-600 hover:bg-ember-700 text-white text-lg transition-all font-display duration-300 hover:shadow-2xl hover:shadow-ember-600/50 hover:scale-105"
               >
                 View Drink Menu
               </a>
