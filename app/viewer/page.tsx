@@ -1,9 +1,9 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState, Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
 
-export default function Viewer() {
+function ViewerContent() {
   const searchParams = useSearchParams()
   const file = searchParams.get('file')
   const [loading, setLoading] = useState(true)
@@ -65,5 +65,17 @@ export default function Viewer() {
         onError={handleError}
       />
     </div>
+  );
+}
+
+export default function Viewer() {
+  return (
+    <Suspense fallback={
+      <div className="flex items-center justify-center h-screen bg-[#E9DED5]">
+        <p className="text-gray-600">Loading viewer...</p>
+      </div>
+    }>
+      <ViewerContent />
+    </Suspense>
   );
 }
