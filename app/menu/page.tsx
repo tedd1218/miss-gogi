@@ -11,7 +11,7 @@ export default function MenuPage() {
       
       {/* Menu Section */}
       <section className="pt-32 pb-20 px-4" style={{ backgroundColor: '#E9DED5' }} data-dark-header>
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto mt-12 mb-5">
           {/* Header */}
           <motion.div
             className="text-center mb-16"
@@ -40,7 +40,7 @@ export default function MenuPage() {
                 className="w-20 h-20 mb-6"
               />
               <a 
-                href="/foodmenu.pdf"
+                href="/viewer?file=/foodmenu.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group px-6 py-4 bg-ember-600 hover:bg-ember-700 text-white text-lg transition-all font-display duration-300 hover:shadow-2xl hover:shadow-ember-600/50 hover:scale-105"
@@ -62,7 +62,7 @@ export default function MenuPage() {
                 className="w-20 h-20 mb-6"
               />
               <a 
-                href="/aycemenu.pdf"
+                href="/viewer?file=/aycemenu.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group px-6 py-4 bg-ember-600 hover:bg-ember-700 text-white text-lg transition-all font-display duration-300 hover:shadow-2xl hover:shadow-ember-600/50 hover:scale-105"
@@ -84,9 +84,9 @@ export default function MenuPage() {
                 className="w-20 h-20 mb-6"
               />
               <a 
+                href="/viewer?file=/drinkmenu.pdf" 
                 target="_blank"
                 rel="noopener noreferrer"
-                href="/drinkmenu.pdf" 
                 className="group px-6 py-4 bg-ember-600 hover:bg-ember-700 text-white text-lg transition-all font-display duration-300 hover:shadow-2xl hover:shadow-ember-600/50 hover:scale-105"
               >
                 View Drink Menu
