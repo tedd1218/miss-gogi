@@ -95,7 +95,7 @@ Please contact the customer to confirm the reservation.
     `.trim()
 
     // Confirmation email to customer
-    const siteUrl = process.env.SITE_URL || 'https://miss-gogi.vercel.app'
+    const siteUrl = process.env.SITE_URL || 'https://miss-gogi.vercel.app' || 'https://missgogibbq.com'
     const customerEmailSubject = `Reservation Request Received – Miss Gogi Korean BBQ`
     const customerEmailHtml = `
 <!DOCTYPE html>
